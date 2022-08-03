@@ -1,0 +1,126 @@
+.attribution {
+    position: absolute;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    top: 85%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+img.top {
+    position: absolute;
+    left: -310px;
+    bottom: 250px;
+}
+
+img.bottom {
+    position: absolute;
+    right: -290px;
+    top: 350px;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box {
+    width: 350px;
+    height: 375px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px 15px 15px 15px;
+    position: fixed;
+}
+
+img.bg-card {
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+img.avatar {
+    position: relative;
+    border-radius: 50%;
+    border: white 5px solid;
+    bottom: 14%;
+}
+
+.info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -40px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.name span,
+.country {
+    font-weight: 100;
+    color: hsl(0, 0%, 59%);
+    font-size: 17px;
+}
+
+.info::after {
+    content: "";
+    width: 350px;
+    border: 1px hsl(0deg 0% 59% / 20%) solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    margin: 5px;
+    font-size: inherit;
+    text-align: center;
+}
+
+.data span {
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    img.top {
+        left: -815px;
+        bottom: 230px;
+    }
+    
+    img.bottom {
+        right: -790px;
+        top: 270px;
+    }
+}
